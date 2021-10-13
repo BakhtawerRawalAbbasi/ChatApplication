@@ -11,14 +11,11 @@ namespace CommunicationLayer
     public class Client_socket
     {
 
-        //public byte[] mess = new byte[3];
-        //public string messType = "Request Message";
 
         NetMQPoller poller;
         DealerSocket client;
 
-        //declaration of delegates and events
-        // [access modifier] delegate [return type] [delegate name]([parameters])
+       
         public delegate void MessageReceived(byte[] mess, string messType);
 
         // Event of delegate 
@@ -62,6 +59,17 @@ namespace CommunicationLayer
 
         }
 
+        public void Send(string messType)
+        {
+
+            // client needs multiple request
+            var messageToServer = new NetMQMessage();
+            messageToServer.Append(messType);
+            messageToServer.AppendEmptyFrame();
+            client.SendMultipartMessage(messageToServer);
+
+        }
+
         public void Client_ReceiveReady(object sender, NetMQSocketEventArgs e)
         {
             var message = e.Socket.ReceiveMultipartMessage();
@@ -69,20 +77,10 @@ namespace CommunicationLayer
             //string response = message[2].ConvertToString();
            string response = message[1].ConvertToString();
             OnReceivedMess(message[0].Buffer, message[1].ConvertToString());
-            // OnReceivedMess(message[1].Buffer, message[2].ConvertToString());
-            //     Console.WriteLine(message[0].ConvertToString());
-            //     Console.WriteLine("REPLY {0}", System.Text.Encoding.Default.GetString(message.Last.Buffer));
+
         }
 
 
-        //public void Mess_Received(byte[] mess, string messType)
-        //{
-        //    // var message = e.Socket.ReceiveMultipartMessage();
-        //    OnReceivedMess();
-        //  //  return "";
-        //    //Console.WriteLine(message[0].ConvertToString());
-        //    //Console.WriteLine("REPLY {0}", System.Text.Encoding.Default.GetString(message.Last.Buffer));
-        //}
 
         //method which raise an event 
         protected virtual void OnReceivedMess(byte[] mess, string messType)

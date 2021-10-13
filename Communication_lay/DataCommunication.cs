@@ -27,29 +27,26 @@ namespace CommunicationLayer
         }
         public  void DataSend<T>(T t,string MessType)
         {
-            //Serialization serialize = new Serialization();
+        
             byte[] jsonString = Serialization.JsonSerializer<T>(t);
-            //Client_socket client = new Client_socket("2");
             client.Send(jsonString, MessType);
-           // client.Mess_Received += Mess_Received;
+       
 
         }
 
 
-        
+        public void DataSend(string MessType)
+        {
+            
+            client.Send( MessType);
+          
+
+        }
 
 
-       // public  void C1_Mess_Received(byte[] mess, string messType)
-        //{
 
-           // UserLoginRequest pp = Deserialization.JsonDeserialize<UserLoginRequest>(mess);
-          // string name = "bakhtawer";
-          // OnReceivedMess(name, messType);
-          // Console.WriteLine(pp.Email);
+     
 
-
-       // }
-    
         public void Mess_Received(byte[] mess, string messType)
         {
             if(messType=="Login Request")
