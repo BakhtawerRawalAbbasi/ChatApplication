@@ -1,0 +1,12 @@
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\bin\Debug\net5.0-windows\Communicationlyer.deps.json
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\bin\Debug\net5.0-windows\Communicationlyer.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\bin\Debug\net5.0-windows\ref\Communicationlyer.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\bin\Debug\net5.0-windows\Communicationlyer.pdb
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.csproj.AssemblyReference.cache
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.AssemblyInfoInputs.cache
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.AssemblyInfo.cs
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.csproj.CoreCompileInputs.cache
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\ref\Communicationlyer.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communicationlyer\obj\Debug\net5.0-windows\Communicationlyer.pdb

@@ -1,0 +1,15 @@
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.csproj.AssemblyReference.cache
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.AssemblyInfoInputs.cache
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.AssemblyInfo.cs
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.csproj.CoreCompileInputs.cache
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\bin\Debug\net5.0-windows\Communication_lay.deps.json
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\bin\Debug\net5.0-windows\Communication_lay.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\bin\Debug\net5.0-windows\ref\Communication_lay.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\bin\Debug\net5.0-windows\Communication_lay.pdb
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\bin\Debug\net5.0-windows\Model.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\bin\Debug\net5.0-windows\Model.pdb
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.csproj.CopyComplete
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\ref\Communication_lay.dll
+C:\Users\bakhtawar\source\repos\Router_Dealer\Communication_lay\obj\Debug\net5.0-windows\Communication_lay.pdb
