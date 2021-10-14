@@ -61,7 +61,11 @@ namespace CommunicationLayer
                 OnReceivedMess(pp, messType);
             }
 
-
+            else if (messType == "Current User Login")
+            {
+                ResponsetoListUser pp = Deserialization.JsonDeserialize<ResponsetoListUser>(mess);
+                OnReceivedMess(pp, messType);
+            }
         }
 
 

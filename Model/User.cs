@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 
 namespace Models
 {
-
+    [DataContract]
     public class User : INotifyPropertyChanged
     {
-
+        [DataMember]
         private string email_id;
+        [DataMember]
         private string userName;
-        private string id;
+     
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
@@ -29,14 +31,7 @@ namespace Models
         }
  
 
-        public string Email
-        {
-            get{ return email_id; } 
-            set
-            {
-                email_id = value;  OnPropertyChanged("email_id");
-            }
-        }
+       
         public string UserName
         {
             get { return userName; }
@@ -45,14 +40,16 @@ namespace Models
                 userName = value; OnPropertyChanged("userName");
             }
         }
-        public string ID
+
+        public string EmailID
         {
-            get { return id; }
+            get { return email_id; }
             set
             {
-                email_id = value; OnPropertyChanged("id");
+                email_id = value; OnPropertyChanged("userName");
             }
         }
+       
 
     }
 }
