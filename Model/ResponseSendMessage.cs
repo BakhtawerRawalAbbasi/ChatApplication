@@ -11,8 +11,9 @@ namespace Models
     [DataContract]
     public class ResponseSendMessage
     {
+        
         [DataMember]
-        public string sendMessageResponse;
+        public ResponseSendMessage responseSendMess;
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {
@@ -26,11 +27,10 @@ namespace Models
 
         }
 
-        public ResponseSendMessage(string resp)
+        public ResponseSendMessage(ResponseSendMessage resp)
         {
-            sendMessageResponse = resp;
-            OnPropertyChanged("resp"); ;
-        }
+            responseSendMess = resp; OnPropertyChanged("resp"); ;
 
+        }
     }
 }

@@ -92,6 +92,12 @@ namespace CommunicationLayer
                 OnReceivedMessage(pp, messType);
             }
 
+            else if (messType == "Message Receive Request")
+            {
+                RequestToSendMess pp = Deserialization.JsonDeserialize<RequestToSendMess>(mess);
+                OnReceivedMessage(pp, messType);
+            }
+
         }
 
         protected virtual void OnReceivedMessage(object mess, string messType)

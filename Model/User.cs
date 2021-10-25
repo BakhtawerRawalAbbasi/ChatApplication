@@ -15,7 +15,8 @@ namespace Models
         private string email_id;
         [DataMember]
         private string userName;
-     
+        [DataMember]
+        private string status;
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
@@ -49,7 +50,15 @@ namespace Models
                 email_id = value; OnPropertyChanged("email_id");
             }
         }
-       
+
+        public string Status
+        {
+            get { return status; }
+            set
+            {
+                status = value; OnPropertyChanged("status");
+            }
+        }
 
     }
 }
