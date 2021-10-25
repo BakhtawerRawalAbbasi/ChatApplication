@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,15 +10,13 @@ using System.Threading.Tasks;
 namespace Models
 {
     [DataContract]
-    public class UserLoginRequest : INotifyPropertyChanged
+    public class LoginUser
     {
         [DataMember]
-        private string email_id;
+        public List<UserStatus> loginUserEmail;
 
-        [DataMember]
-        private string id;
-        [DataMember]
-        private string password;
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
@@ -32,21 +31,13 @@ namespace Models
 
         }
 
+        public LoginUser(List<UserStatus> resp)
+        {
 
-        public string Email
-        {
-            get { return email_id; }
-            set { email_id = value; OnPropertyChanged("email_id"); }
+            loginUserEmail = resp;
+            OnPropertyChanged("resp"); ;
         }
-        public string Password
-        {
-            get { return password; }
-            set { password = value; OnPropertyChanged("password"); }
-        }
-        public string ID
-        {
-            get { return id; }
-            set { id = value; OnPropertyChanged("id"); }
-        }
+
+
     }
 }

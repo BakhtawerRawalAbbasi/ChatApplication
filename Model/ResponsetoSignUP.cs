@@ -30,7 +30,7 @@ namespace Models
 
         public ResponsetoSignUP(string resp)
         {
-            registrationResponse = resp; 
+            registrationResponse = resp;
             OnPropertyChanged("resp"); ;
         }
 

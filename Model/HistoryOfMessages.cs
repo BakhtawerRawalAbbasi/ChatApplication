@@ -9,16 +9,14 @@ using System.Threading.Tasks;
 namespace Models
 {
     [DataContract]
-    public class UserLoginRequest : INotifyPropertyChanged
+    public class HistoryOfMessages
     {
         [DataMember]
-        private string email_id;
-
+        private string messages;
         [DataMember]
-        private string id;
+        private string messageSentTime;
         [DataMember]
-        private string password;
-
+        private string senderEmail;
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {
@@ -31,22 +29,20 @@ namespace Models
 
 
         }
-
-
-        public string Email
+        public string Messages
         {
-            get { return email_id; }
-            set { email_id = value; OnPropertyChanged("email_id"); }
+            get { return messages; }
+            set { messages = value; OnPropertyChanged("messages"); }
         }
-        public string Password
+        public string MessageSentTime
         {
-            get { return password; }
-            set { password = value; OnPropertyChanged("password"); }
+            get { return messageSentTime; }
+            set { messageSentTime = value; OnPropertyChanged("messageSentTime"); }
         }
-        public string ID
+        public string SenderEmail
         {
-            get { return id; }
-            set { id = value; OnPropertyChanged("id"); }
+            get { return senderEmail; }
+            set { senderEmail = value; OnPropertyChanged("messageSentTime"); }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 namespace Models
 {
     [DataContract]
-    public class ResponsetoListUser
+    public class ResponsetoListUser 
     {
         [DataMember]
         public List<User> userListResponse;
@@ -37,7 +38,7 @@ namespace Models
         {
 
             userListResponse = resp;
-            OnPropertyChanged("resp"); ;
+            OnPropertyChanged("resp"); 
         }
 
        

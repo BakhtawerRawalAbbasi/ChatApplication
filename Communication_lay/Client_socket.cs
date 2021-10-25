@@ -76,6 +76,7 @@ namespace CommunicationLayer
             byte[] originalMessage =message[0].Buffer;
             //string response = message[2].ConvertToString();
            string response = message[1].ConvertToString();
+            
             OnReceivedMess(message[0].Buffer, message[1].ConvertToString());
 
         }
@@ -85,9 +86,8 @@ namespace CommunicationLayer
         //method which raise an event 
         protected virtual void OnReceivedMess(byte[] mess, string messType)
         {
-            // this method notify all subscriber
+    
             if (Mess_Received != null)
-                // Raise an event
                 Mess_Received(mess, messType);
         }
 
