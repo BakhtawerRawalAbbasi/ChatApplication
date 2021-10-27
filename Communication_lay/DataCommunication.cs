@@ -94,7 +94,7 @@ namespace CommunicationLayer
 
             else if (messType == "Message Receive Request")
             {
-                RequestToSendMess pp = Deserialization.JsonDeserialize<RequestToSendMess>(mess);
+                SenderNewMessage pp = Deserialization.JsonDeserialize<SenderNewMessage>(mess);
                 OnReceivedMessage(pp, messType);
             }
 

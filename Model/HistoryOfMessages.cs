@@ -14,9 +14,12 @@ namespace Models
         [DataMember]
         private string messages;
         [DataMember]
-        private string messageSentTime;
+       
+        private DateTime messageSentTime;
         [DataMember]
         private string senderEmail;
+        [DataMember]
+        private string senderName;
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {
@@ -34,7 +37,7 @@ namespace Models
             get { return messages; }
             set { messages = value; OnPropertyChanged("messages"); }
         }
-        public string MessageSentTime
+        public DateTime MessageSentTime
         {
             get { return messageSentTime; }
             set { messageSentTime = value; OnPropertyChanged("messageSentTime"); }
@@ -43,6 +46,11 @@ namespace Models
         {
             get { return senderEmail; }
             set { senderEmail = value; OnPropertyChanged("messageSentTime"); }
+        }
+        public string SenderName
+        {
+            get { return senderName; }
+            set { senderName = value; OnPropertyChanged("senderName"); }
         }
     }
 }
